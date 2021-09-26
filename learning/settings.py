@@ -12,7 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import django_heroku
+import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 django_heroku.settings(locals())
 
