@@ -15,7 +15,7 @@ import django_heroku
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR, 'staticfiles'
 django_heroku.settings(locals())
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
