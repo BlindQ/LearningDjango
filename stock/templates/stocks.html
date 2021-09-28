@@ -18,7 +18,7 @@
         <tr>
             <td>{{ stock.ticker }}</td>
             <td>{{ stock.name }}</td>
-            <td>{{ stock.get.random_price }}{{ stock.currency.sign}}</td>
+            <td>{{ stock.get_random_price }}{{ stock.currency.sign}}</td>
         </tr>
         {% endfor %}
         </tbody>
